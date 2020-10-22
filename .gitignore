@@ -81,5 +81,3 @@ yarn.lock
 !.githooks/*.sh
 !Makefile
 !package-lock.json
-vendor-bin/**/vendor
-vendor-bin/**/composer.lock
