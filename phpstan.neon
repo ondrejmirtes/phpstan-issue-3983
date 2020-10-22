@@ -1,0 +1,10 @@
+includes:
+  - vendor-bin/phpstan/vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+  level: 0
+  paths:
+    - ./
+  excludes_analyse:
+    - vendor-bin
+    - vendor

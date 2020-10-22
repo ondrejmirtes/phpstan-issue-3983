@@ -1,0 +1,220 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8bdaf891d2c56b8785fa6efdc05d657d",
+    "packages": [
+        {
+            "name": "wpml/collect",
+            "version": "dev-hotfix/wpmlga-766",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OnTheGoSystems/collect.git",
+                "reference": "a5913e6b9e003f88789196fd82722242a4f92b7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OnTheGoSystems/collect/zipball/a5913e6b9e003f88789196fd82722242a4f92b7e",
+                "reference": "a5913e6b9e003f88789196fd82722242a4f92b7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.4",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Illuminate/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "WPML\\Collect\\": "src/Illuminate"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2020-10-22T07:50:00+00:00"
+        },
+        {
+            "name": "wpml/core-api",
+            "version": "dev-hotfix/wpmlga-766",
+            "source": {
+                "type": "git",
+                "url": "https://git.onthegosystems.com/wpml-packages/core-api.git",
+                "reference": "b91c8960c9f53bf23cf194d87eab8ceba64f2607"
+            },
+            "require-dev": {
+                "10up/wp_mock": "0.2.0",
+                "antecedent/patchwork": "^2.0",
+                "cvuorinen/phpdoc-markdown-public": "^0.2.0",
+                "otgs/unit-tests-framework": "~1.2.0",
+                "wpml/collect": "dev-wpml-collect-rename",
+                "wpml/fp": "dev-develop",
+                "wpml/wp": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "core"
+                ],
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruce Pearson",
+                    "email": "bruce@onthegosystems.com"
+                }
+            ],
+            "description": "Class and utilities to interface with WPML core functionality",
+            "time": "2020-10-22T07:47:20+00:00"
+        },
+        {
+            "name": "wpml/fp",
+            "version": "dev-hotfix/wpmlga-766",
+            "source": {
+                "type": "git",
+                "url": "https://git.onthegosystems.com/wpml-packages/fp.git",
+                "reference": "49c1cc25fad99cc63bf224028fedc593280c6863"
+            },
+            "require-dev": {
+                "cvuorinen/phpdoc-markdown-public": "^0.2.0",
+                "lucatume/function-mocker": "~1.0",
+                "phpunit/phpunit": "^5",
+                "wpml/collect": "dev-wpml-collect-rename"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "core"
+                ],
+                "files": [
+                    "core/functions.php",
+                    "core/strings_functions.php",
+                    "core/system.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2020-10-21T09:21:25+00:00"
+        },
+        {
+            "name": "wpml/wp",
+            "version": "dev-hotfix/wpmlga-766",
+            "source": {
+                "type": "git",
+                "url": "https://git.onthegosystems.com/wpml-packages/wp.git",
+                "reference": "7658d664eaba8a9b4bb0bc6a57b2237e460f926a"
+            },
+            "require-dev": {
+                "antecedent/patchwork": "^2.0",
+                "otgs/unit-tests-framework": "~1.2.0",
+                "wpml/collect": "dev-wpml-collect-rename",
+                "wpml/fp": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ],
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruce Pearson",
+                    "email": "bruce@onthegosystems.com"
+                }
+            ],
+            "description": "Class and utilities to interface with WordPress from WPML",
+            "time": "2020-10-22T07:48:38+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "bamarni/composer-bin-plugin",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bamarni/composer-bin-plugin.git",
+                "reference": "9329fb0fbe29e0e1b2db8f4639a193e4f5406225"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bamarni/composer-bin-plugin/zipball/9329fb0fbe29e0e1b2db8f4639a193e4f5406225",
+                "reference": "9329fb0fbe29e0e1b2db8f4639a193e4f5406225",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^5.5.9 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0 || ^2.0",
+                "symfony/console": "^2.5 || ^3.0 || ^4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Bamarni\\Composer\\Bin\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bamarni\\Composer\\Bin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "No conflicts for your bin dependencies",
+            "keywords": [
+                "composer",
+                "conflict",
+                "dependency",
+                "executable",
+                "isolation",
+                "tool"
+            ],
+            "time": "2020-05-03T08:27:20+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "wpml/collect": 20,
+        "wpml/core-api": 20,
+        "wpml/fp": 20,
+        "wpml/wp": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.6"
+    },
+    "plugin-api-version": "1.1.0"
+}

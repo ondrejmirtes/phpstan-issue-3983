@@ -1,0 +1,48 @@
+{
+    "name": "wpml/core",
+    "description": "WPML Core",
+    "license": "GPL-2.0-only",
+    "homepage": "https://wpml.org",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Andrea Sciamanna",
+            "email": "andrea.s@onthegosystems.com",
+            "homepage": "https://wpml.org"
+        },
+        {
+            "name": "Bruce Pearsons",
+            "email": "bruce.p@onthegosystems.com",
+            "homepage": "https://wpml.org"
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "5.6"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "wpml/collect": "dev-hotfix/wpmlga-766",
+        "wpml/core-api": "dev-hotfix/wpmlga-766",
+        "wpml/fp": "dev-hotfix/wpmlga-766",
+        "wpml/wp": "dev-hotfix/wpmlga-766"
+    },
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.4"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@composer bin all install --ansi"
+        ],
+        "bin": "echo 'bin not installed'",
+        "post-update-cmd": ["@composer bin all update --ansi"]
+    },
+    "autoload": {
+        "classmap": [
+            "classes/"
+        ]
+    }
+}
